@@ -1,5 +1,5 @@
 # AsciSolitare
-curese based Solitare card game
+curses based Solitare card game
 
 Key - Function
 
@@ -11,4 +11,6 @@ Key - Function
  * n  - new game
  * m  - boss button
  * q  - quit
+
+Modeled after my old C bases program
 
