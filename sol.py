@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 # ASCII solitare
 # Copyright (c) 2014-2015 by Matthew Bustad <mybustad@gmail.com>
 #
