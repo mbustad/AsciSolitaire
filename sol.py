@@ -49,7 +49,7 @@ def main():
       """Display all cards"""
       if self.hand :		# hand not empty
          for I in range( len(self.hand),0, -1 ):
-           stdscr.addstr( 4 + I, 9, `self.hand[I - 1]`)
+           stdscr.addstr( 4 + I, 9, str(self.hand[I - 1]))
       else:
         stdscr.addstr( 5, 9,"[]")
     def space(self): pass   # placeholder functions for subclasses
@@ -127,7 +127,7 @@ def main():
       stdscr.addstr( 1, 44 + self.id * 4, "__") # header
       for I in range(13):
         if len(self.cards) > I :
-          stdscr.addstr( 2 + I, 44 + self.id * 4, `self.cards[I]`)
+          stdscr.addstr( 2 + I, 44 + self.id * 4, str(self.cards[I]))
     def gety(self):
       """horizonal location"""
       return 44 + self.id * 4
@@ -223,7 +223,7 @@ def main():
       stdscr.addstr( 1, 14 + self.id * 4, "__")
       for I in range(26):
         if len(self.cards) > I :
-          stdscr.addstr( 2 + I, 14 + self.id * 4, `self.cards[I]`)
+          stdscr.addstr( 2 + I, 14 + self.id * 4, str(self.cards[I]))
     def gety(self):
       return 14 + self.id * 4
     def movedown(self):
@@ -303,15 +303,15 @@ def main():
       setcur(stock)  # now in stock area
     def show(self):
       if self.up :
-        stdscr.addstr( 2, 5, `self.up[-1]`)
+        stdscr.addstr( 2, 5, str(self.up[-1]))
       else:
         stdscr.addstr( 2, 5,"[]")
       if self.up0 :
-        stdscr.addstr( 3, 5, `self.up0`)
+        stdscr.addstr( 3, 5, str(self.up0))
       else:
         stdscr.addstr( 3, 5,"[]")
       if self.up1 :
-        stdscr.addstr( 4, 5, `self.up1`)
+        stdscr.addstr( 4, 5, str(self.up1))
       else:
         stdscr.addstr( 4, 5,"[]")
     def putt(self, c):		# Move into stack
@@ -388,7 +388,7 @@ def main():
       setcur(waste)
     def show(self):
       if self.data : # cards in Stock
-        stdscr.addstr( 2, 1, `self.data[-1]`)
+        stdscr.addstr( 2, 1, str(self.data[-1]))
       else:
         stdscr.addstr( 2, 1,"[]")
     def space(self):		# space bar hit
