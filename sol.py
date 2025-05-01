@@ -20,9 +20,9 @@ def main():
    GNU General Public License version 2 or any later version.
   
   """
-  print "%s" % copyright
-  print " Press ? for help."
-  print ""
+  print("%s" % copyright)
+  print(" Press ? for help.")
+  print("")
   time.sleep(1)
   
   d = 0	# debug flag
